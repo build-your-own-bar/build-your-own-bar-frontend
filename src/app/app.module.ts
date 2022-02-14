@@ -16,6 +16,8 @@ import { LandingPageComponent } from './landing-page/landing-page.component';
 import { LoginComponent } from './landing-page/login/login.component';
 import { SignupComponent } from './landing-page/signup/signup.component';
 
+import 'animate.css'
+
 const routes: Routes = [{path: 'menu', component: MenuComponent}, 
 {path: '', component: LandingPageComponent},
 {path: 'about', component: AboutComponent},
