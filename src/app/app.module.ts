@@ -3,19 +3,41 @@ import { BrowserModule } from '@angular/platform-browser';
 import {RouterModule, Routes} from '@angular/router'
 
 import { AppComponent } from './app.component';
-import { HomeComponent } from './home/home.component';
+import { MenuComponent } from './menu/menu.component';
 import { AboutComponent } from './about/about.component';
+import { NavigationComponent } from './navigation/navigation.component';
+import { ProfileComponent } from './profile/profile.component';
+import { MyDrinksComponent } from './profile/my-drinks/my-drinks.component';
+import { CreateDrinkComponent } from './profile/create-drink/create-drink.component';
+import { DrinkCardComponent } from './menu/drink-card/drink-card.component';
+import { DrinkDetailComponent } from './menu/drink-card/drink-detail/drink-detail.component';
+import { LandingPageComponent } from './landing-page/landing-page.component';
+import { LoginComponent } from './landing-page/login/login.component';
+import { SignupComponent } from './landing-page/signup/signup.component';
 
-const routes: Routes = [{path: 'home', component: HomeComponent}, {
-  path: '', redirectTo: '/home', pathMatch: 'full'
+const routes: Routes = [{path: 'menu', component: MenuComponent}, {
+  path: '', redirectTo: '/menu', pathMatch: 'full'
 },
-{path: 'about', component: AboutComponent}];
+{path: 'about', component: AboutComponent},
+{path: 'profile', component: ProfileComponent},
+{path: 'login', component: LoginComponent}
+];
+
 
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent,
-    AboutComponent
+    MenuComponent,
+    AboutComponent,
+    NavigationComponent,
+    ProfileComponent,
+    MyDrinksComponent,
+    CreateDrinkComponent,
+    DrinkCardComponent,
+    DrinkDetailComponent,
+    LandingPageComponent,
+    LoginComponent,
+    SignupComponent
   ],
   imports: [
     BrowserModule, RouterModule.forRoot(routes)
