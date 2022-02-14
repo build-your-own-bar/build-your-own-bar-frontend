@@ -1,7 +1,7 @@
 <hr>
 <div class="row">
-  <div class="col-xs-12">
-    <a routerLink="/details" class="list-group-item clearfix" *ngFor="let drink of drinks">
+  <div class="col-xs-12 d-flex">
+    <a routerLink="/details" *ngFor="let drink of drinks">
       <div class="card" style="width: 18rem;">
         <img class="card-img-top" src="{{drink.photo}}" alt="{{drink.name}}">
         <div class="card-body">

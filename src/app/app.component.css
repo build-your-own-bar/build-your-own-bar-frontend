@@ -1,0 +1,6 @@
+* {
+   background-color: black;
+   box-sizing: border-box;
+   opacity: 90%;
+   height: calc(100vh - 15px);
+}
