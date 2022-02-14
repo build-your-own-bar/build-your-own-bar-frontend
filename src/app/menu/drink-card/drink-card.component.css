@@ -1,0 +1,16 @@
+a {
+  text-decoration: none;
+  color: rgb(116, 112, 112);
+}
+
+.card {
+  border: 2px solid darkgrey;
+  margin: 20px;
+  text-align: center;
+  max-width: 200px;
+  background-color: lemonchiffon;
+}
+
+.card-img-top {
+  max-height: 100px;
+}
