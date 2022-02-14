@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import {RouterModule, Routes} from '@angular/router'
+import {RouterModule, Routes} from '@angular/router';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
 import { MenuComponent } from './menu/menu.component';
@@ -15,9 +16,10 @@ import { LandingPageComponent } from './landing-page/landing-page.component';
 import { LoginComponent } from './landing-page/login/login.component';
 import { SignupComponent } from './landing-page/signup/signup.component';
 
-const routes: Routes = [{path: 'menu', component: MenuComponent}, {
-  path: '', redirectTo: '/menu', pathMatch: 'full'
-},
+import 'animate.css'
+
+const routes: Routes = [{path: 'menu', component: MenuComponent}, 
+{path: '', component: LandingPageComponent},
 {path: 'about', component: AboutComponent},
 {path: 'profile', component: ProfileComponent},
 {path: 'login', component: LoginComponent},
@@ -41,7 +43,7 @@ const routes: Routes = [{path: 'menu', component: MenuComponent}, {
     SignupComponent
   ],
   imports: [
-    BrowserModule, RouterModule.forRoot(routes)
+    BrowserModule, RouterModule.forRoot(routes), HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
