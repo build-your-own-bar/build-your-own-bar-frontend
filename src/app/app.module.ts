@@ -18,7 +18,7 @@ import { SignupComponent } from './landing-page/signup/signup.component';
 
 import 'animate.css'
 
-const routes: Routes = [{path: 'menu', component: MenuComponent}, 
+const routes: Routes = [{path: 'menu', component: MenuComponent},
 {path: '', component: LandingPageComponent},
 {path: 'about', component: AboutComponent},
 {path: 'profile', component: ProfileComponent},

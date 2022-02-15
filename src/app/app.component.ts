@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
-import { map, tap } from 'rxjs';
+
 
 @Component({
   selector: 'app-root',
@@ -9,22 +8,15 @@ import { map, tap } from 'rxjs';
 })
 export class AppComponent implements OnInit{
   title = 'byob';
-  drinkList: any=[];
 
-  constructor(private http: HttpClient){}
+
+  constructor(){}
 
   ngOnInit(){
-    this.fetchDrinks();
+
   }
 
-  private fetchDrinks(){
-    this.http
-    .get('http://buildyobar.herokuapp.com/drinks/')
-    .subscribe(res => {
-      this.drinkList = res;
-      console.log(this.drinkList)
-    })
-  }
+
 
 
 

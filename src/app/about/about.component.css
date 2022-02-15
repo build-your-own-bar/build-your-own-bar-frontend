@@ -1,20 +1,28 @@
-.about-container {
+.about-container,
+.contact-form {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 40px 20px;
+  text-align: center;
+  margin-top: 30px;
 }
 
 .photo-div {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-evenly;
   width: 100%;
-  margin: 40px 20px;
+  margin-top: 60px;
+  margin-bottom: 60px;
 }
 .img-about {
   object-fit: fill;
-  width: 200px;
+  width: 110px;
   border-radius: 50%;
+  border: 2px solid goldenrod;
+}
+
+.contact-form {
+  margin-bottom: 30px;
 }
