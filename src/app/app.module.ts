@@ -15,6 +15,7 @@ import { DrinkDetailComponent } from './menu/drink-card/drink-detail/drink-detai
 import { LandingPageComponent } from './landing-page/landing-page.component';
 import { LoginComponent } from './landing-page/login/login.component';
 import { SignupComponent } from './landing-page/signup/signup.component';
+import { FormsModule } from '@angular/forms';
 
 import 'animate.css'
 
@@ -46,7 +47,7 @@ const routes: Routes = [{path: 'menu', component: MenuComponent},
     SignupComponent
   ],
   imports: [
-    BrowserModule, RouterModule.forRoot(routes), HttpClientModule
+    BrowserModule, RouterModule.forRoot(routes), HttpClientModule, FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
