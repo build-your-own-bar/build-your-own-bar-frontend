@@ -18,13 +18,13 @@ import { SignupComponent } from './landing-page/signup/signup.component';
 
 import 'animate.css'
 
-const routes: Routes = [{path: 'menu', component: MenuComponent}, 
+const routes: Routes = [{path: 'menu', component: MenuComponent},
 {path: '', component: LandingPageComponent},
 {path: 'about', component: AboutComponent},
 {path: 'profile', component: ProfileComponent},
 {path: 'login', component: LoginComponent},
 {path: 'signup', component: SignupComponent},
-{path: 'details', component: DrinkDetailComponent},
+{path: 'details/:id', component: DrinkDetailComponent},
 {path: 'createdrink', component: CreateDrinkComponent},
 {path: 'mydrinks', component: MyDrinksComponent},
 ];
