@@ -1,4 +1,6 @@
+import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-profile',
@@ -6,10 +8,18 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./profile.component.css']
 })
 export class ProfileComponent implements OnInit {
+  userDetails: any = [];
+  id: any = '';
 
-  constructor() { }
+  constructor(private http: HttpClient, private route: ActivatedRoute) { }
 
-  ngOnInit(): void {
+  ngOnInit() {
+    this.http.get('https://buildyobar.herokuapp.com/users/')
+    .subscribe(res => {
+      this.userDetails = res; 
+      console.log(this.userDetails)
+    }) 
   }
+
 
 }

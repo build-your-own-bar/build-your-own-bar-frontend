@@ -24,7 +24,7 @@ const routes: Routes = [{path: 'menu', component: MenuComponent},
 {path: 'profile', component: ProfileComponent},
 {path: 'login', component: LoginComponent},
 {path: 'signup', component: SignupComponent},
-{path: 'details', component: DrinkDetailComponent},
+{path: 'details/:id', component: DrinkDetailComponent},
 {path: 'createdrink', component: CreateDrinkComponent},
 {path: 'mydrinks', component: MyDrinksComponent},
 ];

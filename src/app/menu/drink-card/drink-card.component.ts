@@ -8,6 +8,7 @@ import { Drink } from '../drink.model';
 export class DrinkCardComponent implements OnInit {
   drinks: Drink[] = [
     new Drink(
+    0,
     'Manhattan',
     'on the rocks',
     'Bulleit Bourbon',
@@ -19,6 +20,7 @@ export class DrinkCardComponent implements OnInit {
     'double shot',
     'https://food.fnr.sndimg.com/content/dam/images/food/fullset/2013/2/13/0/ED0309H_classic-manhattan-cocktail_s4x3.jpg.rend.hgtvcom.616.462.suffix/1371614573383.jpeg'),
     new Drink(
+    1,
     'Old Fashioned',
     'on the rocks',
     'Bulleit Bourbon',

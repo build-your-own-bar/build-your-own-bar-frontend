@@ -1,4 +1,5 @@
-export class Drink {
+export class Drink { 
+  public id: number;
   public name: string;
   public ice: string;
   public spirit: string;
@@ -11,7 +12,8 @@ export class Drink {
   public photo: string;
 
 
-  constructor(name: string, ice: string, spirit: string, liqueur:string, juice: string, garnish: string, citrus: string, soda: string, special_request: string, photo: string) {
+  constructor(id: number, name: string, ice: string, spirit: string, liqueur:string, juice: string, garnish: string, citrus: string, soda: string, special_request: string, photo: string) {
+    this.id = id;
     this.name = name;
     this.ice = ice;
     this.spirit = spirit;
