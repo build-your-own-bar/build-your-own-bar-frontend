@@ -1,0 +1,17 @@
+.create-btn {
+    width: 100vh;
+    height: 50px;
+    border: none;
+    background-color: black;
+    color: gold;
+    font-size: 25px;
+}
+
+.create-btn:hover {
+    background-color: rgb(236, 236, 236);
+}
+
+.menu-title {
+    /* border: 2px solid red;  */
+    width: 160px;
+}
