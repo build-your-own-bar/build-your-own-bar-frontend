@@ -17,7 +17,8 @@ import { LoginComponent } from './landing-page/login/login.component';
 import { SignupComponent } from './landing-page/signup/signup.component';
 import { FormsModule } from '@angular/forms';
 
-import 'animate.css'
+import 'animate.css';
+import { FooterComponent } from './footer/footer.component';
 
 const routes: Routes = [{path: 'menu', component: MenuComponent},
 {path: '', component: LandingPageComponent},
@@ -44,7 +45,8 @@ const routes: Routes = [{path: 'menu', component: MenuComponent},
     DrinkDetailComponent,
     LandingPageComponent,
     LoginComponent,
-    SignupComponent
+    SignupComponent,
+    FooterComponent,
   ],
   imports: [
     BrowserModule, RouterModule.forRoot(routes), HttpClientModule, FormsModule

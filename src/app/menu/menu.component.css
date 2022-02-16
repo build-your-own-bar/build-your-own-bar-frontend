@@ -1,18 +1,16 @@
 .create-btn {
-    width: 100vh;
-    height: 50px;
-    border: none;
-    background-color: black;
-    color: #FBC720;
-    font-size: 25px;
+  height: 50px;
+  border: none;
+  background-color: black;
+  color: #fbc720;
+  font-size: 25px;
+  border-radius: 5px;
 }
 
 .create-btn:hover {
-    background-color: rgb(236, 236, 236);
+  background-color: rgb(236, 236, 236);
 }
 
-.menu-title {
-    /* border: 2px solid red;  */
-    width: 160px;
-    color: #FBC720;
+.menu-container {
+  height: 80vh;
 }
