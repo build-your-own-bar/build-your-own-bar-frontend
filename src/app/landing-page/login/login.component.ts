@@ -23,17 +23,11 @@ export class LoginComponent implements OnInit {
       const email = form.value.email;
       const password = form.value.password;
 
-      if (this.isLogin) {
-
-      } else {
-        this.loginService.signup(username, email, password).subscribe(resData => {
-        console.log(resData);
-      },
-      error => {
-        console.log(error);
-      }
-    );
-  }
+     
+      this.loginService.signup(username, email, password)
+      
+    
+  
 
       
       form.reset();
@@ -41,7 +35,8 @@ export class LoginComponent implements OnInit {
 
   
 
-  ngOnInit(): void {
+  ngOnInit() {
+    this.isLogin = true;
   }
 
 }
