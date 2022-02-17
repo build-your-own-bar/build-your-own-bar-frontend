@@ -2,29 +2,35 @@
 
 ## Application Description
 
+> BYOBar was designed by three developers who have a passion for connecting with others and making people feel like they're part of the family. With our app, we are able to give that experience to you, the user, and you are always able to show off your style and preferences in cocktail form!
+
 ### Link to BYOBar Backend Repository:
 
 https://github.com/build-your-own-bar/build-your-own-bar-backend
 
 ## Technologies Used
 
-- Angular
-- TypeScript
-- CSS
 - React
-- React Bootstrap
-- React Router
-- Axios
+- CSS
+- Animate.css
+- Material UI
+- Email JS
+- Angular Bootstrap
 
 ## Installation
 
-1.
+1. Fork and clone this repo to your local machine
+2. In your terminal, `cd` into the project directory
+3. Run `npm i` to install dependencies
+4. Open your code editor with `code .`
+5. Run `ng serve` to run the frontend locally
 
 ## Current Application State
 
 # Future Improvements
 
--
+- We would like to add a feature that allows you to visit other member profiles so you can see their drink list.
+- We would like to add a favorites feature that allows a user to choose their favorite drinks and lets them view them whenever they're signed in.
 
 # Contribution Guidelines
 
@@ -33,6 +39,8 @@ https://github.com/build-your-own-bar/build-your-own-bar-backend
 > If you identify bugs, submit an issue on the Git repo. Please detail the bug in your issue. If you know how to fix it, feel free to note the methods you would use. You could also submit a pull request with suggested code to fix it.
 
 # Initial Planning
+
+https://trello.com/b/q1Q4pewQ/byob
 
 ## User Stories
 
@@ -57,7 +65,7 @@ Stretch:
 
 ### Unsolved Problems / Major Hurdles
 
->
+> The biggest hurdle we faced was getting data to pass between components. We are still working on the CRUD functionality for this app, but statically it works! We are proud that we taught ourselves how to use Angular in a span of 3 days.
 
 ### Contributors
 
